@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        .login-box{
+            width: 300px;
+            margin: 100px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            background: #f8f8f8;
+        }
+        input[type = text],input[type= password]{
+            width: 300px;
+            height: 30px;
+            padding: 0px;
+            margin:5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            align-items: center;
+
+        }
+        button{
+            background-color: rgb(69, 108, 10);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            justify-content: left;
+        }
+        .login-box p{
+            margin-bottom: 10px;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        nav{
+            flex:1;
+            text-align: right;
+
+        }
+        nav ul{
+            display:inline-block;
+            list-style-type:none;
+        }
+        nav ul li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: #555;
+        }
+        p{
+            color: #555;
+
+        }
+        .container{
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .col-2{
+            flex-basis:50%;
+            min-width: 300px;
+        }
+        .col-2 img{
+            max-width: 100%;
+            padding:50px 0px;
+
+        }
+
+        .col-2 img h1
+        {
+            font-size: 50px;
+            line-height: 6px;
+            margin: 25px 0;
+            
+
+        }
+        .col-2 h1{
+            font-size: 50px;
+            line-height: 60px;
+            margin:25x 0px;
+        }
+        .btn{
+            display: inline-block;
+            background: #ff4c3b;
+            color: white;
+            padding: 8px 30px;
+            margin: 30px 0px;
+            border-radius: 30px;
+            transition: background 0.5s;
+        }
+        .btn:hover{
+            background: #563434;
+
+        }
+        .header{
+            background: radial-gradient(white,#ffd6d6);
+        }
+        .header .row{
+            margin-top: 70px;
+        }
+        .footer{
+            background-color: black;
+            color: #8a8a8a;
+            font-size: 14px;
+            padding: 60px 0 20px;
+        }
+
+        .footer p{
+            color: #9a9a9a;
+        }
+
+        .footer h3{
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .footer-col-1,
+        .footer-col-2,
+        .footer-col-3,
+        .footer-col-4{
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        .footer-col-1{
+            flex-basis: 30%;
+        }
+        .footer-col-2{
+            flex: 1;
+            text-align: center;
+
+        }.footer-col-2 img{
+            width: 180px;
+            margin-bottom: 20px;
+        }
+        .footer-col-3,.footer-col-4
+        {
+            flex-basis: 12%;
+            text-align: center;
+        }
+        u1{
+            list-style-type: none;
+
+        }
+        .app-logo{
+            margin-top:20px;
+        }
+        .app-logo img{
+            width: 140px;
+        }
+        .footer hr{
+            border: none;
+            background: #b5b5b5;
+            height: 1px;
+            margin: 20px 0;
+        }
+        .copy-right{
+            text-align: center;
+        }
+        .menu-icon{
+            width:28px;
+            margin-left:20px ;
+            display: none;
+        }
+        .col-4 {
+            flex-basis: 25%;
+            padding: 10px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s;
+        }
+        .col-4 p {
+             font-size: 14px;
+        }
+        .col-4:hover {
+            transform: translateY(-5px);
+        }
+
+
+        .col-4 img {
+             width: 100%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class ="header">
+        <div class = "container">
+            <div class = "navbar">
+                <div class ="logo">
+                    <a href="index1.html"><img src = "Icon-multikart.png" alt="no img found" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id ="menuitems">
+                        <li><a href="index1.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href = "cart.html"><img src="istockphoto-1206806317-612x612.jpg" alt="sorry no img found" width="40px" height="40px"></a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-2">
+          <h1>
+          Products <br />
+          </h1>
+        
+        </div>
+        <div class="col-3">
+          <img src="https://ciseco-nextjs.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-right-2.dc1c84f6.png&w=1080&q=75" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+    
+        <div class="small-container">
+            <h2 class="title">Latest Products</h2>
+              <div class="row">
+                <div class="col-4">
+                  <a href="product_details.html"><img src="https://i.ibb.co/47Sk9QL/product-1.jpg" alt="" /></a>
+                  <a href="product_details.html">
+                    <h4>Red Printed T-shirt</h4>
+                  </a>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                        <p>₹500.00</p>         <a class="addto">Add to cart</a>
+                </div>
+            
+                <div class="col-4">
+                  <img src="https://i.ibb.co/b7ZVzYr/product-2.jpg" alt="" />
+                  <h4>Red Printed T-shirt</h4>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                        <p>₹500.00</p>         <a class="addto">Add to cart</a>
+                </div>
+            
+                <div class="col-4">
+                  <img src="https://i.ibb.co/KsMVr26/product-3.jpg" alt="" />
+                  <h4>Red Printed T-shirt</h4>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                        <p>₹500.00</p>         <a class="addto">Add to cart</a>
+                </div>
+            
+                <div class="col-4">
+                  <img src="https://i.ibb.co/0cMfpcr/product-4.jpg" alt="" />
+                  <h4>Red Printed T-shirt</h4>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                        <p>₹500.00</p>         <a class="addto">Add to cart</a>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-4">
+                  <img src="https://i.ibb.co/bQ5t8bR/product-5.jpg" alt="" />
+                  <h4>Red Printed T-shirt</h4>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                        <p>₹500.00</p>         <a class="addto">Add to cart</a>
+                </div>
+            
+                <div class="col-4">
+                  <img src="https://i.ibb.co/vVpTyBD/product-6.jpg" alt="" />
+                  <h4>Red Printed T-shirt</h4>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                        <p>₹500.00</p>         <a class="addto">Add to cart</a>
+                </div>
+            
+                <div class="col-4">
+                  <img src="https://i.ibb.co/hR5FGwH/product-7.jpg" alt="" />
+                  <h4>Red Printed T-shirt</h4>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                      <p>₹500.00</p>
+                  <a class="addto">Add to cart</a>
+                </div>
+            
+                <div class="col-4">
+                  <img src="https://i.ibb.co/QfCgdXZ/product-8.jpg" alt="" />
+                  <h4>Red Printed T-shirt</h4>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                        <p>₹500.00</p>         <a class="addto">Add to cart</a>
+                </div>
+              </div>
+            
+              <div class="row">
+                <div class="col-4">
+                  <img src="https://i.ibb.co/nw5xZwk/product-9.jpg" alt="" />
+                  <h4>Red Printed T-shirt</h4>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                        <p>₹500.00</p>         <a class="addto">Add to cart</a>
+                </div>
+            
+                <div class="col-4">
+                  <img src="https://i.ibb.co/9HCsmjf/product-10.jpg" alt="" />
+                  <h4>Red Printed T-shirt</h4>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                        <p>₹500.00</p>         <a class="addto">Add to cart</a>
+                </div>
+            
+                <div class="col-4">
+                  <img src="https://i.ibb.co/JQ2MBHR/product-11.jpg" alt="" />
+                  <h4>Red Printed T-shirt</h4>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                        <p>₹500.00</p>         <a class="addto">Add to cart</a>
+                </div>
+            
+                <div class="col-4">
+                  <img src="https://i.ibb.co/nRZMs6Y/product-12.jpg" alt="" />
+                  <h4>Red Printed T-shirt</h4>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                        <p>₹500.00</p>         <a class="addto">Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+    
+    <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and iso mobile phone.</p>
+              <div class="app-logo">
+                <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+                <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+              </div>
+            </div>
+      
+            <div class="footer-col-2">
+              <img src="https://angular.pixelstrap.com/multikart/assets/images/icon/logo.png" alt="" />
+              <p>
+                Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+                Sports Accessible to the Many.
+              </p>
+            </div>
+      
+            <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </ul>
+            </div>
+      
+            <div class="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">Copyright &copy; 2021 - Sample</p>
+        </div>
+      </div>
